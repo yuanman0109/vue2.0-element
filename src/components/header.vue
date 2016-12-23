@@ -28,6 +28,11 @@
     .header-box{
         background: #324057;
         height: 60px;
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        z-index:1000;
     }
     .logo{
         width: 200px;

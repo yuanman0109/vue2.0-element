@@ -32,6 +32,6 @@ export default {
     font-family: Source Sans Pro, Helvetica, sans-serif;
   }
   .main{
-    padding:20px 20px 20px 220px;
+    padding:80px 20px 20px 220px;
   }
 </style>
