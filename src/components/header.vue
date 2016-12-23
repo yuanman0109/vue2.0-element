@@ -27,7 +27,7 @@
 <style scoped>
     .header-box{
         background: #324057;
-        overflow: hidden;
+        height: 60px;
     }
     .logo{
         width: 200px;

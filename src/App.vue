@@ -3,6 +3,7 @@
     <Navbar></Navbar>
     <Sidebar></Sidebar>
     <div class="main">
+      <Breadcrumb></Breadcrumb>
       <transition name="bounce">
         <router-view></router-view>
       </transition>
@@ -13,25 +14,24 @@
 <script>
 import Navbar from './components/header'
 import Sidebar from './components/sidebar'
+import Breadcrumb from './components/Breadcrumb'
 
 export default {
   components: {
-    Navbar,Sidebar
+    Navbar,Sidebar,Breadcrumb
   }
 }
 </script>
 
 <style>
-body{
-  margin: 0
-}
-#app {
-  color: #2c3e50;
-  font-family: Source Sans Pro, Helvetica, sans-serif;
-  text-align: center;
-}
-.main{
-  padding:20px 20px 20px 220px;
-}
-
+  body{
+    margin: 0
+  }
+  #app {
+    color: #2c3e50;
+    font-family: Source Sans Pro, Helvetica, sans-serif;
+  }
+  .main{
+    padding:20px 20px 20px 220px;
+  }
 </style>
