@@ -4,8 +4,9 @@
             <el-col :span="24">
                 <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" router>
                     <el-submenu index="1">
-                        <template slot="title"><i class="el-icon-message"></i>导航一</template>
-                        <el-menu-item index="/r_layout">Layout</el-menu-item>
+                        <template slot="title"><i class="el-icon-message"></i>账户管理</template>
+                        <el-menu-item index="/accountList">账户列表</el-menu-item>
+                        <el-menu-item index="/roleLists">角色管理</el-menu-item>
                         <el-menu-item index="/r_form">Form</el-menu-item>
                         <el-menu-item index="/r_table">Table</el-menu-item>
                     </el-submenu>

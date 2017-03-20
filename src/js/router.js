@@ -5,7 +5,8 @@ import view from '../../src/pages/index.js'
 // 通过 Vue.extend() 创建的组件构造器，
 // 或者，只是一个组件配置对象。
 export default [
-  { path: '/r_layout', component: view.c_layout },
+  { path: '/roleLists', component: view.roleLists },
+  { path: '/accountList', component: view.accountList },
   { path: '/r_form', component: view.c_form },
   { path: '/r_table', component: view.c_table }
 ]

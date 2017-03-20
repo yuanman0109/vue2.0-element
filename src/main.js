@@ -6,7 +6,9 @@ import 'element-ui/lib/theme-default/index.css'
 import App from './App'
 //引入vue路由
 import Router from 'vue-router'
-
+//引入数据请求
+import axios from 'axios'
+Vue.prototype.$http = axios
 Vue.use(Router)
 Vue.use(ElementUI)
 
@@ -21,8 +23,12 @@ import routes from '../src/js/router.js'
 const router = new Router({
   routes // （缩写）相当于 routes: routes
 })
-
-
+if(process.env.NODE_ENV!== 'production'){
+  Vue.prototype.bsConfig=require('../config/config.dev');
+}else{
+  Vue.prototype.bsConfig=require('../config/config.prod');
+}
+console.log(process.env.NODE_ENV);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
