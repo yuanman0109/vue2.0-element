@@ -11,12 +11,32 @@
                         <el-menu-item index="/r_table">Table</el-menu-item>
                     </el-submenu>
                     <el-submenu index="2">
-                        <template slot="title"><i class="el-icon-menu"></i>导航二</template>
+                        <template slot="title"><i class="el-icon-menu"></i>客户管理</template>
                         <el-menu-item index="/r_layout">Go to Foo</el-menu-item>
                         <el-menu-item index="/r_form">Go to bar</el-menu-item>
                     </el-submenu>
                     <el-submenu index="3">
-                        <template slot="title"><i class="el-icon-setting"></i>导航三</template>
+                        <template slot="title"><i class="el-icon-setting"></i>资产管理</template>
+                        <el-menu-item index="/r_layout">Go to Foo</el-menu-item>
+                        <el-menu-item index="/r_form">Go to bar</el-menu-item>
+                    </el-submenu>
+                    <el-submenu index="4">
+                        <template slot="title"><i class="el-icon-setting"></i>餐厅设置</template>
+                        <el-menu-item index="/r_layout">Go to Foo</el-menu-item>
+                        <el-menu-item index="/r_form">Go to bar</el-menu-item>
+                    </el-submenu>
+                    <el-submenu index="5">
+                        <template slot="title"><i class="el-icon-setting"></i>WiFi管理</template>
+                        <el-menu-item index="/r_layout">Go to Foo</el-menu-item>
+                        <el-menu-item index="/r_form">Go to bar</el-menu-item>
+                    </el-submenu>
+                    <el-submenu index="6">
+                        <template slot="title"><i class="el-icon-setting"></i>广告管理</template>
+                        <el-menu-item index="/r_layout">Go to Foo</el-menu-item>
+                        <el-menu-item index="/r_form">Go to bar</el-menu-item>
+                    </el-submenu>
+                    <el-submenu index="7">
+                        <template slot="title"><i class="el-icon-setting"></i>财务管理</template>
                         <el-menu-item index="/r_layout">Go to Foo</el-menu-item>
                         <el-menu-item index="/r_form">Go to bar</el-menu-item>
                     </el-submenu>
