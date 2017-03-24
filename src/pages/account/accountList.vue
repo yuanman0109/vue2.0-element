@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="mainContent">
   <form class="form-inline">
     <div class="form-group">
       <el-select v-model="searchForm.roleCode" placeholder="按角色" class="small-select">
@@ -32,7 +32,7 @@
       <el-input v-model="searchForm.searchWord" placeholder="按姓名／账号／工号搜索..."></el-input>
     </div>
     <div class="form-group">
-      <el-button @click="searchBt()">搜索</el-button>
+      <button type="button" class="btn btn-white" @click="searchBt()">搜索</button>
     </div>
   </form>
   <div class="separate"></div>
@@ -49,7 +49,7 @@
       className="headImg"
       >
       <template scope="scope">
-        <img src="../../assets/userdef.png" alt="head"/>
+        <img src="../../assets/images/userdef.png" alt="head"/>
       </template>
     </el-table-column>
     <el-table-column
@@ -84,22 +84,18 @@
     </el-table-column>
     <el-table-column label="操作" width="200">
       <template scope="scope">
-        <el-button
-          size="small"
-          @click="handleEdit(scope.$index, scope.row)">详情</el-button>
-        <el-button
-          size="small"
-          @click="handleEdit(scope.$index, scope.row)">修改</el-button>
-        <el-button
-          size="small"
-          type="danger"
-          @click="operateStatus(scope.$index, scope.row)">{{btText[scope.row.status]}}</el-button>
+        <button type="button" class="btn btn-link btn-link-success"
+          @click="handleEdit(scope.$index, scope.row)">详情</button>
+        <button type="button" class="btn btn-link"
+          @click="handleEdit(scope.$index, scope.row)">修改</button>
+        <button  type="button" class="btn btn-link" :class="{'btn-link-danger':scope.row.status=='ENABLED','btn-link-orange':scope.row.status=='DISABLED'}"
+          @click="operateStatus(scope.$index, scope.row)">{{btText[scope.row.status]}}</button>
       </template>
     </el-table-column>
   </el-table>
   <div class="separate"></div>
   <div class="block clearfix">
-    <el-button>添加账号</el-button>
+    <button type="button" class="btn btn-primary">添加账号</button>
     <el-pagination
       class="pull-right"
       layout="prev, pager, next"
@@ -225,7 +221,6 @@
   }
 </script>
 <style lang="scss">
-@import '../../assets/style/comm.scss';
   .el-row {
     margin-bottom: 20px;
   }

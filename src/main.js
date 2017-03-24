@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
+import './assets/style/comm.scss'
 import App from './App'
 //引入vue路由
 import Router from 'vue-router'
@@ -28,7 +29,6 @@ if(process.env.NODE_ENV!== 'production'){
 }else{
   Vue.prototype.bsConfig=require('../config/config.prod');
 }
-console.log(process.env.NODE_ENV);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

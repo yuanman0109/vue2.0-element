@@ -25,11 +25,9 @@ export default {
 
 <style>
   body{
-    margin: 0
-  }
-  #app {
-    color: #2c3e50;
-    font-family: Source Sans Pro, Helvetica, sans-serif;
+    font-family: "Hiragino Sans GB","华文细黑",STHeiti,"微软雅黑","Microsoft YaHei",SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif!important;
+    background: #f4f4f4;
+    color: #666;
   }
   .main{
     padding:80px 20px 20px 220px;
